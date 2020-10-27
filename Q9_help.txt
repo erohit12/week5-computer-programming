@@ -1,0 +1,17 @@
+Question9: 
+
+prompt = "> "
+secret_word = "TIGER"
+user = ""
+
+while user != secret_word:
+    print("Please enter a five letter word ")
+    user = (input(prompt)).upper()
+    
+    #How do I compare values and index values of secret_word and user? 
+    # Haha ok, i would do something like this:
+    for position, character in enumerate(user): # Basically what this does is a for loop that gives you index (position) and value of every character
+    # So for example if your word is ABCDE, it will give 0,'A' then 1,'B', etc
+    # You can use that to then do the same for the secret_word string, and explore it the same way
+    # Then you find if the indexes matched (perfect match) or if it matched at least once somewhere
+    	pass
